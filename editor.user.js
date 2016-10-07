@@ -265,6 +265,26 @@ var main = function() {
             replacement: "$1$2't$3",
             reason: "English contractions use apostrophes"
         },
+        wanna: {
+            expr: /(^|\s)wanna(\s|$)/gmi,
+            replacement: "$1want to$3",
+            reason: "wanna -> want to"
+        },
+        gotta: {
+            expr: /(^|\s)gotta(\s|$)/gmi,
+            replacement: "$1have to$3",
+            reason: "gotta -> have to"
+        },
+        dunno: {
+            expr: /(^|\s)dunno(\s|$)/gmi,
+            replacement: "$1don't know$3",
+            reason: "dunno -> don't know"
+        },
+        idk: {
+            expr: /(^|\s)idk(\s|$)/gmi,
+            replacement: "$1I don't know$3",
+            reason: "idk -> I don't know"
+        },
         ios: {
             expr: /\b(?:ios|iOs|ioS|IOS|Ios|IoS|ioS)\b(\S|)(?!\S)/gm,
             replacement: "iOS$1",
